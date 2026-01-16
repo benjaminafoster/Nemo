@@ -1,7 +1,7 @@
 from scapy.sendrecv import sr
 from scapy.layers.inet import IP, ICMP
 from dataclasses import dataclass
-from Configuration2 import Config, Host
+from Configuration import Config, Host
 
 
 @dataclass

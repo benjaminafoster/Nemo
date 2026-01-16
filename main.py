@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 from os import environ
-from Configuration2 import Config
+from Configuration import Config
 from Scan import Scanner
 
 environ['PYDANTIC_ERRORS_INCLUDE_URL'] = 'False'
