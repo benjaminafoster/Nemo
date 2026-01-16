@@ -16,10 +16,12 @@ class Config(BaseModel):
 
     Attributes:
         config_path (Path): Path to the configuration file.
-        hosts (Optional[list[Host]]): List of hosts defined in the configuration file.
+        timeout (int): Timeout for network operations.
+        __hosts (Optional[list[Host]]): List of hosts defined in the configuration file.
     """
 
     config_path: Path
+    timeout: Optional[int] = None
     __hosts: Optional[list[Host]] = None
 
     def __init__(self, *args, **kwargs):
