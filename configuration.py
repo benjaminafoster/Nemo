@@ -30,7 +30,7 @@ class Config(BaseModel):
         try:
             self.__hosts = [Host(**host) for host in config_yaml["hosts"]]
         except KeyError:
-            self.hosts = []
+            self.__hosts = []
             raise ValueError("No hosts found in configuration file")
 
     def __load__(self, file_path: Path) -> dict:
@@ -45,3 +45,12 @@ class Config(BaseModel):
         """
         with open(file_path, "r") as file:
             return safe_load(file)
+            
+    def get_hosts(self) -> Optional[list[Host]]:
+        """
+        Get the list of hosts defined in the configuration file.
+
+        Returns:
+            Optional[list[Host]]: List of hosts defined in the configuration file.
+        """
+        return self.__hosts

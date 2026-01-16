@@ -14,6 +14,8 @@ TARGETS_FILE_PATH = CONFIG_DIRECTORY / 'Targets.yaml'
         
 config = Config(config_path=TARGETS_FILE_PATH)
 
-if config.hosts:
-    for host in config.hosts:
+hosts = config.get_hosts()
+
+if hosts and len(hosts) > 0:
+    for host in hosts:
         print(host.hostname)
