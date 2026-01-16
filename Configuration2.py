@@ -47,7 +47,7 @@ class Config(BaseModel):
         """
         with open(file_path, "r") as file:
             return safe_load(file)
-            
+
     def get_hosts(self) -> Optional[list[Host]]:
         """
         Get the list of hosts defined in the configuration file.
