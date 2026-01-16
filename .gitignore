@@ -1,0 +1,12 @@
+# Directory exclusions
+.venv/
+__pycache__/
+
+# File exclusions
+*.pyc
+*.pyo
+*.swp
+*.log
+*.db
+*.sqlite3
+notes.md

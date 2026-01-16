@@ -1,0 +1,10 @@
+[project]
+name = "nemo"
+version = "0.1.0"
+description = "A network monitoring tool"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.12.5",
+    "pyyaml>=6.0.3",
+]

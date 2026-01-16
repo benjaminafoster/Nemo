@@ -1,0 +1,9 @@
+hosts:
+  - hostname: "google.com"
+    ip: "8.8.8.8"
+  - hostname: "example.com"
+    ip: "93.184.216.34"
+  - hostname: "github.com"
+    ip: "140.82.118.3"
+  - hostname: "youtube.com"
+    ip: "172.217.160.142"
